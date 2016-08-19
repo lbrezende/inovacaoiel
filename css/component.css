@@ -829,6 +829,10 @@ input[type=text]::-ms-clear {
 		min-height: 500px;
 	}
 
+	.fs-fields > li .fs-radio-custom span {
+		width: 100%;
+	}
+
 	.fs-form-wrap {
 		font-size: 70%;
 	}
