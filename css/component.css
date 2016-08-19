@@ -315,6 +315,7 @@ button.fs-continue,
 
 .fs-fields > li .fs-radio-custom span label {
 	color: rgba(0,0,0,0.4);
+	color: white;
 	-webkit-transition: color 0.3s;
 	transition: color 0.3s;
 }
