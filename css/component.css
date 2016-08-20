@@ -301,7 +301,7 @@ button.fs-continue,
 	text-align: center;
 	font-weight: 700;
 	font-size: 50%;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;    
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 0.6em;
 	margin-bottom: 10px;
     border: 1px solid rgba(255,255,255,0.5);
@@ -914,4 +914,61 @@ input[type=text]::-ms-clear {
 		-webkit-transform: translate3d(0,0,0);
 		transform: translate3d(0,0,0);
 	}
+}
+
+.sexy-radio + label {
+	position: relative;
+	padding: 0 0 0 30px;
+	vertical-align: top;
+	color: rgba(0,0,0,0.2);
+	cursor: pointer;
+	-webkit-transition: color 0.3s;
+	transition: color 0.3s;
+}
+
+.sexy-radio, .sexy-radio + label::before {
+	width: 25px;
+	height: 25px;
+	top: 50%;
+	left: 0;
+	margin-top: -12px;
+	position: absolute;
+	cursor: pointer;
+}
+
+.sexy-radio {
+	opacity: 0;
+	-webkit-appearance: none;
+	display: inline-block;
+	vertical-align: middle;
+	z-index: 100;
+}
+
+.sexy-radio + label::before {
+	content: '';
+	border: 2px solid #fff;
+	-webkit-transition: opacity 0.3s;
+	transition: opacity 0.3s;
+	border-radius: 50%;
+}
+
+.sexy-radio:checked + label::before {
+	opacity: 0.8;
+}
+
+.sexy-radio + label svg {
+	position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 29%;
+  left: 3px;
+	pointer-events: none;
+}
+
+.sexy-radio + label svg path {
+	stroke: #fdfcd3;
+	stroke-width: 8px;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+	fill: none;
 }
