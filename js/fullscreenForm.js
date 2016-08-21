@@ -525,7 +525,8 @@
 
 		radiobxsFill.forEach(function(el) {
 			var svg = createSVGEl();
-			el.parentNode.querySelector('label').appendChild(svg);
+			var parent = el.parentNode.querySelector('label')
+			parent.insertBefore(svg, parent.firstChild);
 		});
 	}
 })( window );
