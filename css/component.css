@@ -1016,3 +1016,15 @@ input[type=text]::-ms-clear {
 		padding: 0 15%;
 	}
 }
+
+
+
+/*Hacks*/
+
+.fs-nav-dots {display:none;}
+
+button.fs-submit, button.fs-continue {
+	z-index: 999;
+	border: 5px solid #00a59e;
+	position: absolute;
+}
