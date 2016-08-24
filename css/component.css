@@ -38,13 +38,12 @@
 /* Views (fullscreen and overview)*/
 .fs-form-full {
 	top: 5%;
-	margin: 0 auto;
-	width: 70%;
 }
 
-.fs-form-full,
-.fs-message-error {
+.content-container {
+	width: 70%;
 	max-width: 960px;
+	margin: 0 auto;
 }
 
 .fs-form-overview {
@@ -172,13 +171,19 @@ button.fs-continue,
 }
 
 /* Labels & info */
+.fs-fields .field-title {
+	background: rgba(255, 255, 255, 0.1);
+	margin-bottom: 1em;
+	text-align: center;
+}
+
 .fs-fields > li label {
 	position: relative;
 }
 
 .fs-fields > li label.fs-field-label {
 	display: inline-block;
-	padding: 0 5px 1em 0;
+	padding: 1em 5px 1em 0;
 	font-weight: 700;
 	pointer-events: none;
 }
@@ -242,7 +247,7 @@ button.fs-continue,
 	padding: 0.15em;
 	width: 100%;
 	border: none;
-	border-bottom: 2px solid rgba(0,0,0,0.2);
+	border-bottom: 2px solid rgba(255,255,255,0.2);
 	background-color: transparent;
 	color: #fffed8;
 	text-overflow: ellipsis;
@@ -257,7 +262,7 @@ button.fs-continue,
 
 .fs-form-overview .fs-fields input {
 	border-bottom-color: transparent;
-	color: rgba(0,0,0,0.5);
+	color: rgba(255,255,255,0.5);
 }
 
 .fs-fields [required] {
@@ -268,7 +273,7 @@ button.fs-continue,
 }
 
 .fs-fields input:focus {
-	background-color: #007872; /* Fixes chrome bug with placeholder */
+	background-color: transparent; /* Fixes chrome bug with placeholder */
 }
 
 .fs-form-overview .fs-fields input:focus {
@@ -551,7 +556,7 @@ button.fs-continue,
 	top: 0;
 	right: 0;
 	overflow: hidden;
-	color: rgba(0,0,0,0.4);
+	color: rgba(255, 255, 255,0.4);
 	margin: 40px;
 	width: 3em;
 	font-weight: 700;
@@ -578,6 +583,7 @@ button.fs-continue,
 
 .fs-numbers .fs-number-current {
 	float: left;
+	color: rgba(255, 255, 255,0.8);
 }
 
 .fs-numbers .fs-number-new {
@@ -844,7 +850,6 @@ input[type=text]::-ms-clear {
 		top: 2em;
 		right: 2em;
 		left: 0;
-		padding: 0 3.75em 0 1em;
 		width: auto;
 		font-size: 2em;
 	}
