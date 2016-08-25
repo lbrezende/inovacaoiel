@@ -41,7 +41,7 @@
 }
 
 .content-container {
-	width: 70%;
+	width: 80%;
 	max-width: 960px;
 	margin: 0 auto;
 }
@@ -360,7 +360,7 @@ button.fs-continue,
 
 .fs-fields > li .fs-radio-custom span:hover  {
 	color: #fffed8;
-	background: #008c86;
+	background: #1C676F;
 }
 
 .fs-fields > li .fs-radio-custom span:hover label  {
@@ -462,22 +462,22 @@ button.fs-continue,
 /* placeholder */
 .fs-fields input::-webkit-input-placeholder,
 .fs-fields textarea::-webkit-input-placeholder {
-	color: rgba(0,0,0,0.1);
+	color: rgba(255,255,255,0.5);
 }
 
 .fs-fields input:-moz-placeholder,
 .fs-fields textarea:-moz-placeholder {
-	color: rgba(0,0,0,0.1);
+	color: rgba(255,255,255,0.5);
 }
 
 .fs-fields input::-moz-placeholder,
 .fs-fields textarea::-moz-placeholder {
-	color: rgba(0,0,0,0.1);
+	color: rgba(255,255,255,0.5);
 }
 
 .fs-fields input:-ms-input-placeholder,
 .fs-fields textarea:-ms-input-placeholder {
-	color: rgba(0,0,0,0.1);
+	color: rgba(255,255,255,0.5);
 }
 
 /* Hide placeholder when focused in Webkit browsers */
@@ -938,7 +938,7 @@ input[type=text]::-ms-clear {
 	position: relative;
 	vertical-align: top;
 	padding-left: 7px;
-	color: rgba(0,0,0,0.2);
+	color: rgba(255, 255, 255, 0.2);
 	cursor: pointer;
 	-webkit-transition: color 0.3s;
 	transition: color 0.3s;
@@ -946,7 +946,7 @@ input[type=text]::-ms-clear {
 
 .sexy-radio + label .subtitle {
 	font-size: 0.7em;
-	color: #00534F;
+	color: rgba(255, 255, 255, 0.7);
 	display: block;
 }
 
