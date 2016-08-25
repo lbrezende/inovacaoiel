@@ -82,7 +82,8 @@
 								</div>
 							</div>
 							<div class="content-container fs-anim-lower">
-								<div class="fs-radio-group fs-radio-custom clearfix">
+								<div class="fs-map clearfix">
+									<!--
 									<span class="uf"><input name="q2" type="radio" id="q2-0" value="0"><label for="q2-0">AC</label></span>
 									<span class="uf"><input name="q2" type="radio" id="q2-1" value="1"><label for="q2-1">MA</label></span>
 									<span class="uf"><input name="q2" type="radio" id="q2-2" value="2"><label for="q2-2">RJ</label></span>
@@ -110,6 +111,10 @@
 									<span class="uf"><input name="q2" type="radio" id="q2-24" value="24"><label for="q2-24">GO</label></span>
 									<span class="uf"><input name="q2" type="radio" id="q2-25" value="25"><label for="q2-25">PR</label></span>
 									<span class="uf"><input name="q2" type="radio" id="q2-26" value="26"><label for="q2-26">TO</label></span>
+									-->
+									<input type="hidden" id="map-state-selection"/>
+									<embed src="img/brazilmap.svg">
+									</embed>
 								</div>
 							</div>
 						</li>
@@ -479,7 +484,7 @@
 		<script src="js/vanilla-masker.min.js"></script>
 		<script src="js/fullscreenForm.js"></script>
 		<script>
-			(function() {
+			(function(window) {
 				var formWrap = document.getElementById( 'fs-form-wrap' );
 
 				[].slice.call( document.querySelectorAll( 'select.cs-select' ) ).forEach( function(el) {
@@ -491,14 +496,23 @@
 					});
 				} );
 
-				new FForm( formWrap, {
+				window.form = new FForm(formWrap, {
+					ctrlNavDots: false,
 					onReview : function() {
 						classie.add( document.body, 'overview' ); // for demo purposes only
 					}
-				} );
+				});
+
+				window.onEmbedMapClick = function(state) {
+					var input = document.getElementById('#map-state-selection')
+					input.value = state;
+
+					// Kids, don't do this at home!
+					window.form._nextField();
+				}
 
 				VMasker(document.querySelector("#q26")).maskPattern("(99) 9999-9999");
-			})();
+			})(window);
 		</script>
 	</body>
 </html>

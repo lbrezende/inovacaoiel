@@ -284,6 +284,10 @@ button.fs-continue,
 	font-size: 1.2em;
 }
 
+.fs-fields .fs-map {
+	text-align: center;
+}
+
 .fs-fields .fs-radio-custom input[type="radio"] {
 	position: absolute;
 	display: block;
@@ -689,20 +693,6 @@ button.fs-continue:hover {
 	color: #fff;
 }
 
-.fs-continue::after {
-	position: absolute;
-	top: 100%;
-	left: 0;
-	width: 100%;
-	line-height: 3;
-	text-align: center;
-	background: transparent;
-	color: white;
-	content: 'ou digite ENTER';
-	font-size: 0.65em;
-	pointer-events: none;
-}
-
 /* Error message */
 .fs-message-error {
 	position: absolute;
@@ -873,6 +863,7 @@ input[type=text]::-ms-clear {
 		right: 25px;
 	}
 
+/*
 	button.fs-continue {
 		right: 20px;
 		bottom: 20px;
@@ -883,7 +874,6 @@ input[type=text]::-ms-clear {
 		border-radius: 50%;
 		font-size: 2em;
 	}
-
 	button.fs-continue::before {
 		position: absolute;
 		top: 0;
@@ -899,6 +889,7 @@ input[type=text]::-ms-clear {
 	.fs-continue::after {
 		content: '';
 	}
+*/
 
 	button.fs-submit {
 		width: 100%;
@@ -1020,16 +1011,4 @@ input[type=text]::-ms-clear {
 	.sexy-radio + label .subtitle {
 		padding: 0 15%;
 	}
-}
-
-
-
-/*Hacks*/
-
-.fs-nav-dots {display:none;}
-
-button.fs-submit, button.fs-continue {
-	z-index: 999;
-	border: 5px solid #00a59e;
-	position: absolute;
 }
