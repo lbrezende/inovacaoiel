@@ -315,10 +315,10 @@ button.fs-continue,
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 0.6em;
 	margin-bottom: 10px;
-    border: 1px solid rgba(255,255,255,0.5);
-    border-radius: 5px;
-    background: rgba(255,255,255,0.1);
-    padding: 16px;
+  border: 1px solid rgba(255,255,255,0.5);
+  border-radius: 5px;
+  background: rgba(255,255,255,0.1);
+  padding: 16px;
 
 }
 
@@ -859,6 +859,7 @@ input[type=text]::-ms-clear {
 		height: 50px;
 		border-radius: 50%;
 		font-size: 2em;
+		color: transparent;
 	}
 	button.fs-continue::before {
 		position: absolute;
@@ -870,6 +871,7 @@ input[type=text]::-ms-clear {
 		text-align: center;
 		font-size: 1em;
 		line-height: 50px;
+		color: #00a59e;
 	}
 
 	.fs-continue::after {
@@ -931,6 +933,7 @@ input[type=text]::-ms-clear {
 	display: inline-block;
 	vertical-align: middle;
 	z-index: 100;
+	display: none !important;
 }
 
 .sexy-radio + label::before {
@@ -1006,5 +1009,24 @@ input[type=text]::-ms-clear {
 
 	.sexy-radio + label {
 		padding-left: 10px;
+	}
+}
+
+
+.show-mobile {
+	display: none;
+}
+
+.hide-mobile {
+	display: block;
+}
+
+@media screen and (max-width: 35em) {
+	.show-mobile {
+		display: block;
+	}
+
+	.hide-mobile {
+		display: none;
 	}
 }

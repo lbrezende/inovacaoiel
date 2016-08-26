@@ -194,6 +194,7 @@
 					case 'input' :
 						[].slice.call( fld.querySelectorAll( 'input[type="radio"]' ) ).forEach( function( inp ) {
 							inp.addEventListener( 'change', function(ev) {
+								ev.preventDefault();
 								if (classie.has(inp, 'sexy-radio') && document.createElement('svg').getAttributeNS) {
 									self._draw(inp, function() {
 										self._nextField();
