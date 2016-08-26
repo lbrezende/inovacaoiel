@@ -690,26 +690,17 @@ button.fs-continue {
 
 /* Error message */
 .fs-message-error {
-	position: absolute;
-	bottom: 75%;
-	left: 50%;
-	z-index: 800;
-	max-width: 960px;
-	width: 70%;
-	color: #eb7e7f;
-	font-weight: 700;
-	font-size: 1em;
-	opacity: 0;
-	-webkit-transform: translate3d(-50%,-5px,0);
-	transform: translate3d(-50%,-5px,0);
+  color: #eb7e7f;
+  font-weight: 700;
+  font-size: 1em;
+  opacity: 0;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 7px;
 }
 
 .fs-message-error.fs-show {
 	opacity: 1;
-	-webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
-	transition: transform 0.3s, opacity 0.3s;
-	-webkit-transform: translate3d(-50%,0,0);
-	transform: translate3d(-50%,0,0);
 }
 
 /* Animation classes & animations */
@@ -891,18 +882,7 @@ input[type=text]::-ms-clear {
 	}
 
 	.fs-message-error {
-		bottom: 1.75em;
-		left: 0;
-		padding: 0 90px 0 2em;
-		width: 100%;
-		font-size: 1.5em;
-		-webkit-transform: translate3d(0,-5px,0);
-		transform: translate3d(0,-5px,0);
-	}
-
-	.fs-message-error.fs-show {
-		-webkit-transform: translate3d(0,0,0);
-		transform: translate3d(0,0,0);
+    padding-top: 50px;
 	}
 }
 
