@@ -102,14 +102,16 @@ button.fs-continue,
 .fs-message-error,
 .fs-message-final {
 	visibility: hidden;
+	display: none;
 }
 
 .no-js .fs-form-full .fs-fields > li {
 	visibility: visible;
 }
 
-.fs-show {
+.fs-show, .fs-current {
 	visibility: visible !important;
+	display: block !important
 }
 
 /* Some general styles */
@@ -723,6 +725,7 @@ button.fs-continue {
 /* Hide current li when navigating to next question */
 .fs-form .fs-display-next .fs-hide {
 	visibility: visible;
+	display: block;
 }
 
 .fs-form .fs-display-next .fs-hide .fs-anim-lower,
@@ -856,7 +859,6 @@ input[type=text]::-ms-clear {
 		right: 25px;
 	}
 
-/*
 	button.fs-continue {
 		right: 20px;
 		bottom: 20px;
@@ -882,7 +884,6 @@ input[type=text]::-ms-clear {
 	.fs-continue::after {
 		content: '';
 	}
-*/
 
 	button.fs-submit {
 		width: 100%;
@@ -1001,7 +1002,29 @@ input[type=text]::-ms-clear {
 		top: -0.5em;
 	}
 
+	.sexy-radio + label svg {
+		top: -0.9em;
+	}
+
 	.sexy-radio + label .subtitle {
 		padding: 0 15%;
+		margin-top: -2.5em !important;
+	}
+
+	br {
+		display: none;
+	}
+
+	.fs-fields > li .fs-align-left span {
+    margin-left: 4px;
+    margin-top: 5px;
+	}
+
+	.sexy-radio-group {
+		text-align: left;
+	}
+
+	.sexy-radio + label {
+		padding-left: 10px;
 	}
 }

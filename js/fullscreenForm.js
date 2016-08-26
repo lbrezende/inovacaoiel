@@ -274,7 +274,6 @@
 			classie.add( nextField, 'fs-current' );
 			classie.add( nextField, 'fs-show' );
 
-			window.scrollTo(0, 0);
 		}
 
 		// after animation ends remove added classes from fields
@@ -301,6 +300,7 @@
 					self.options.onReview();
 				}
 				else {
+					window.scrollTo(0, 0);
 					classie.remove( nextField, 'fs-show' );
 
 					if( self.options.ctrlNavPosition ) {
