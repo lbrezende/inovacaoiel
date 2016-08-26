@@ -41,8 +41,8 @@
 }
 
 .content-container {
-	width: 80%;
-	max-width: 960px;
+	width: 85%;
+	max-width: 1000px;
 	margin: 0 auto;
 }
 
@@ -302,11 +302,11 @@ button.fs-continue,
 .fs-fields > li .fs-radio-custom span {
 	float: left;
 	position: relative;
-	margin-right: 3%;
+	margin-right: 1%;
 	padding: 10px;
-	max-width: 300px;
+	max-width: 323px;
 	min-height: 50px;
-	width: 30%;
+	width: 33%;
 	text-align: center;
 	font-weight: 700;
 	font-size: 50%;
@@ -679,18 +679,11 @@ button.fs-continue {
 }
 
 button.fs-continue {
-	position: absolute;
+	position: fixed;
 	right: 0;
 	bottom: 0;
-	margin: 0 40px 60px 0;
+	margin: 0 10px 10px 0;
 	font-size: 1.25em;
-}
-
-button.fs-submit:hover,
-button.fs-submit:focus,
-button.fs-continue:hover {
-	background: #008c86
-	color: #fff;
 }
 
 /* Error message */
