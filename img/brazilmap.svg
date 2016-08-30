@@ -10,8 +10,16 @@
             fill: #07718D;
         }
 
+        .estado text {
+            font-size: 0.9em;
+        }
+
         .circle {
-            fill: #97E2DE;
+            fill: #A2E2DF;
+        }
+
+        .circle + text {
+            fill: #254C65;
         }
 
         a:hover, a:hover .circle {
@@ -20,6 +28,10 @@
 
         a:hover .circle {
             stroke: rgba(255, 255, 255, 0.6);
+        }
+
+        a:hover .circle + text {
+            fill: #97E2DE;
         }
     </style>
 

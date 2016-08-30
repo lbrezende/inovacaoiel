@@ -163,6 +163,7 @@ button.fs-continue,
 .js .fs-form-full .fs-fields > li {
 	position: absolute;
 	width: 100%;
+	z-index: 1;
 }
 
 .fs-form-overview .fs-fields > li,
@@ -686,6 +687,7 @@ button.fs-continue {
 	bottom: 0;
 	margin: 0 10px 10px 0;
 	font-size: 1.25em;
+	z-index: 99;
 }
 
 /* Error message */
