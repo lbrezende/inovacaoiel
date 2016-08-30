@@ -503,10 +503,18 @@
 
 				window.onEmbedMapClick = function(state) {
 					var input = document.getElementById('map-state-selection')
-					input.value = state;
 
-					// Kids, don't do this at home!
-					window.form._nextField();
+					var states = input.value;
+          var stateIndex = states.indexOf(state);
+
+          if (stateIndex == -1) {
+            states += (states.length) ? ',' + state : state;
+          } else {
+            states = states.replace(',' + state, '');
+            states = states.replace(state + ',', '');
+          }
+
+          input.value = states;
 				}
 
 				VMasker(document.querySelector("#q26")).maskPattern("(99) 9999-9999");
