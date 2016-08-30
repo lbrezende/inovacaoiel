@@ -291,7 +291,8 @@ button.fs-continue,
 	text-align: center;
 }
 
-.fs-fields .fs-radio-custom input[type="radio"] {
+.fs-fields .fs-radio-custom input[type="radio"],
+.fs-fields .fs-checkbox-group input[type="checkbox"] {
 	position: absolute;
 	display: block;
 	margin: 30px auto 20px;
@@ -317,19 +318,23 @@ button.fs-continue,
 	font-size: 0.6em;
 	margin-bottom: 10px;
   border: 1px solid rgba(255,255,255,0.5);
-  border-radius: 5px;
   background: rgba(255,255,255,0.1);
-  padding: 16px;
-
+  padding: 0px;
+  border-radius: 5px;
 }
 
-.uf { width: 15% !important; }
+.uf {
+	width: 15% !important;
+}
 
 .fs-fields > li .fs-radio-custom span label {
 	color: rgba(0,0,0,0.4);
 	color: white;
 	-webkit-transition: color 0.3s;
 	transition: color 0.3s;
+  padding: 16px;
+  border-radius: 5px;
+  width: 100%;
 }
 
 .fs-form-overview .fs-fields > li .fs-radio-custom span {
@@ -365,12 +370,17 @@ button.fs-continue,
 	cursor: pointer;
 }
 
-.fs-fields > li .fs-radio-custom span:hover  {
+.fs-fields > li .fs-radio-custom span:hover,
+.fs-fields .fs-checkbox-group input[type="checkbox"]:checked + label {
 	color: #fffed8;
-	background: #1C676F;
+	background: #269CA9;
 }
 
-.fs-fields > li .fs-radio-custom span:hover label  {
+.fs-fields .fs-checkbox-group input[type="checkbox"] + label {
+	background: #195473;
+}
+
+.fs-fields > li .fs-radio-custom span:hover label {
 	color: #fffed8;
 }
 
