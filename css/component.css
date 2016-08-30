@@ -993,17 +993,23 @@ input[type=text]::-ms-clear {
 		margin-bottom: 40px;
 	}
 
+	.sexy-radio, .sexy-radio + label span {
+		display: inline-block;
+    padding-left: 30px;
+	}
+
 	.sexy-radio, .sexy-radio + label::before {
-		top: -0.5em;
+		top: 0.7em;
 	}
 
 	.sexy-radio + label svg {
-		top: -0.9em;
+		top: 0.3em;
 	}
 
 	.sexy-radio + label .subtitle {
-		padding: 0 15%;
-		margin-top: -2.5em !important;
+		padding: 0 15% 0 65px;
+		margin-top: -1.2em !important;
+		margin-bottom: -35px;
 	}
 
 	br {
