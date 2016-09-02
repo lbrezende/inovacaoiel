@@ -1048,3 +1048,11 @@ input[type=text]::-ms-clear {
 		display: none;
 	}
 }
+
+.floating-logo {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	margin: 0 0 10px 10px;
+	z-index: 99;
+}
