@@ -209,8 +209,6 @@
 			}
 		} );
 
-
-
 		// keyboard navigation events - jump to next field when pressing enter
 		document.addEventListener( 'keydown', function( ev ) {
 			if( !self.isLastStep && ev.target.tagName.toLowerCase() !== 'textarea' ) {
@@ -228,7 +226,7 @@
 	 * jumps to the next field
 	 */
 	FForm.prototype._nextField = function( backto ) {
-		if( this.isLastStep || !this._validade() || this.isAnimating ) {
+		if( this.isLastStep || !this._validate() || this.isAnimating ) {
 			return false;
 		}
 		this.isAnimating = true;
@@ -408,43 +406,47 @@
 	}
 
 	// TODO: this is a very basic validation function. Only checks for required fields..
-	FForm.prototype._validade = function() {
+	FForm.prototype._validate = function() {
 		var fld = this.fields[ this.current ],
-			input = fld.querySelector( 'input[required]' ) || fld.querySelector( 'textarea[required]' ) || fld.querySelector( 'select[required]' ),
+			inputs = fld.querySelectorAll( 'input[required]' ) || fld.querySelectorAll( 'textarea[required]' ) || fld.querySelectorAll( 'select[required]' ),
 			error;
 
-		if( !input ) return true;
+		if( !inputs || !inputs.length ) return true;
 
-		switch( input.tagName.toLowerCase() ) {
-			case 'input' :
-				if( input.type === 'radio' || input.type === 'checkbox' ) {
-					var checked = 0;
-					[].slice.call( fld.querySelectorAll( 'input[type="' + input.type + '"]' ) ).forEach( function( inp ) {
-						if( inp.checked ) {
-							++checked;
+		for (var i = 0 ; i < inputs.length ; i++) {
+			var input = inputs[i];
+
+			switch( input.tagName.toLowerCase() ) {
+				case 'input' :
+					if( input.type === 'radio' || input.type === 'checkbox' ) {
+						var checked = 0;
+						[].slice.call( fld.querySelectorAll( 'input[type="' + input.type + '"]' ) ).forEach( function( inp ) {
+							if( inp.checked ) {
+								++checked;
+							}
+						} );
+						if( !checked ) {
+							error = 'NOVAL';
 						}
-					} );
-					if( !checked ) {
+					}
+					else if( input.value === '' ) {
 						error = 'NOVAL';
 					}
-				}
-				else if( input.value === '' ) {
-					error = 'NOVAL';
-				}
-				break;
+					break;
 
-			case 'select' :
-				// assuming here '' or '-1' only
-				if( input.value === '' || input.value === '-1' ) {
-					error = 'NOVAL';
-				}
-				break;
+				case 'select' :
+					// assuming here '' or '-1' only
+					if( input.value === '' || input.value === '-1' ) {
+						error = 'NOVAL';
+					}
+					break;
 
-			case 'textarea' :
-				if( input.value === '' ) {
-					error = 'NOVAL';
-				}
-				break;
+				case 'textarea' :
+					if( input.value === '' ) {
+						error = 'NOVAL';
+					}
+					break;
+			}
 		}
 
 		if( error != undefined ) {
