@@ -9,6 +9,7 @@
 		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
 		<link rel="stylesheet" type="text/css" href="css/demo.css" />
 		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link rel="stylesheet" type="text/css" href="css/cs-select.css" />
 		<script src="js/modernizr.custom.js"></script>
 	</head>
 	<body>
@@ -478,8 +479,38 @@
 							</div>
 
 							<div class="content-container">
-								<input class="fs-anim-lower" id="q24" type="text" placeholder="Digite aqui seu estado..." required />
-								<br/>
+								<div>
+									<select name="q24" class="cs-select cs-skin-rotate cs-skin-underline">
+										<option value="ac">AC</option>
+										<option value="al">AL</option>
+										<option value="am">AM</option>
+										<option value="ap">AP</option>
+										<option value="ba">BA</option>
+										<option value="ce">CE</option>
+										<option value="df">DF</option>
+										<option value="es">ES</option>
+										<option value="go">GO</option>
+										<option value="ma">MA</option>
+										<option value="mg">MG</option>
+										<option value="ms">MS</option>
+										<option value="mt">MT</option>
+										<option value="pa">PA</option>
+										<option value="pb">PB</option>
+										<option value="pe">PE</option>
+										<option value="pi">PI</option>
+										<option value="pr">PR</option>
+										<option value="sc">SC</option>
+										<option value="se">SE</option>
+										<option value="sp">SP</option>
+										<option value="rj">RJ</option>
+										<option value="rn">RN</option>
+										<option value="ro">RO</option>
+										<option value="rr">RR</option>
+										<option value="rs">RS</option>
+										<option value="to">TO</option>
+									</select>
+								</div>
+								<br class="show-always"/>
 								<input class="fs-anim-lower" id="q25" type="text" placeholder="Digite aqui sua cidade..." required />
 							</div>
 						</li>
@@ -504,6 +535,7 @@
 		</div><!-- /container -->
 
 		<script src="js/classie.js"></script>
+		<script src="js/selectFx.js"></script>
 		<script src="js/vanilla-masker.min.js"></script>
 		<script src="js/fullscreenForm.js"></script>
 		<script>
@@ -527,6 +559,15 @@
 					["sp", "mg", "rj", "es"],
 					["pr", "sc", "rs"]
 				];
+
+				[].slice.call( document.querySelectorAll( 'select.cs-select' ) ).forEach( function(el) {
+					new SelectFx( el, {
+						stickyPlaceholder: false,
+						onChange: function(val){
+							document.querySelector('span.cs-placeholder').style.backgroundColor = val;
+						}
+					});
+				} );
 
 				[].slice.call(mapCheckboxes).forEach(function(el) {
 					el.addEventListener('change', function() {

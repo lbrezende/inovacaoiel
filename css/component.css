@@ -1080,3 +1080,7 @@ input[type=text]::-ms-clear {
   top: -60px;
   position: relative;
 }
+
+.show-always {
+	display: block !important;
+}
