@@ -72,6 +72,14 @@
 									<input type="hidden" name="q25" id="state-selection"/>
 
 									<div class="show-mobile">
+										<div class="cf">
+											<span class="uf-area"><input type="checkbox" id="tp-0" value="0"><label for="tp-0">Todo o território nacional</label></span>
+											<span class="uf-area"><input type="checkbox" id="tp-1" value="1"><label for="tp-1">Norte</label></span>
+											<span class="uf-area"><input type="checkbox" id="tp-2" value="2"><label for="tp-2">Nordeste</label></span>
+											<span class="uf-area"><input type="checkbox" id="tp-3" value="3"><label for="tp-3">Centro-Oeste</label></span>
+											<span class="uf-area"><input type="checkbox" id="tp-4" value="4"><label for="tp-4">Sudoeste</label></span>
+											<span class="uf-area"><input type="checkbox" id="tp-5" value="5"><label for="tp-5">Sul</label></span>
+										</div>
 										<span class="uf"><input type="checkbox" id="q25-1" value="ac"><label for="q25-1">AC</label></span>
 										<span class="uf"><input type="checkbox" id="q25-2" value="al"><label for="q25-2">AL</label></span>
 										<span class="uf"><input type="checkbox" id="q25-3" value="am"><label for="q25-3">AM</label></span>
@@ -573,12 +581,14 @@
 
 					for (var i = 0; i < areas[area].length; i++) {
           	var state = areas[area][i];
+		        var element = document.querySelector('input[value="' + state + '"]')
 
 						if (!checked) {
 	            states += (states.length) ? ',' + state : state;
 	            if (window.highlightMapArea) {
 		         		window.highlightMapArea(state);
 		          }
+		          element.checked = true
 	          } else {
 	          	states = states.replace(state, '');
 	          	states = states.replace(',' + state, '');
@@ -586,6 +596,7 @@
             	if (window.unhighlightMapArea) {
 		         		window.unhighlightMapArea(state);
 		          }
+		          element.checked = false
 	          }
 					}
 

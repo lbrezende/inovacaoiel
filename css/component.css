@@ -308,7 +308,7 @@ button.fs-continue,
 	position: relative;
 	margin-right: 1%;
 	padding: 10px;
-	max-width: 323px;
+	max-width: 344px;
 	min-height: 50px;
 	width: 33%;
 	text-align: center;
@@ -1060,4 +1060,17 @@ input[type=text]::-ms-clear {
 .half-width {
 	max-width: 50%;
 	display: inline-block;
+}
+
+.cf:before, .cf:after {
+  content: " ";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  *zoom: 1;
 }
