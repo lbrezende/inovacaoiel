@@ -1074,3 +1074,9 @@ input[type=text]::-ms-clear {
 .cf {
   *zoom: 1;
 }
+
+.map-areas {
+	padding: 0 10%;
+  top: -60px;
+  position: relative;
+}
