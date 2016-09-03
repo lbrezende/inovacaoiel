@@ -19,6 +19,33 @@
             window.parent.onEmbedMapClick(state);
             toggleClass(document.getElementById(state), 'active');
         }
+
+        window.parent.highlightMapArea = function(state) {
+            var element = document.getElementById(state);
+            var classString = element.className.baseVal;
+            var className = 'active';
+            var nameIndex = classString.indexOf(className);
+
+            if (nameIndex == -1) {
+                classString += (classString.length) ? ' ' + className : className;
+            }
+
+            element.className.baseVal = classString;
+        }
+
+        window.parent.unhighlightMapArea = function(state) {
+            var element = document.getElementById(state);
+            var classString = element.className.baseVal;
+            var className = 'active';
+            var nameIndex = classString.indexOf(className);
+
+            if (nameIndex != -1) {
+                classString = classString.replace(' ' + className, '');
+                classString = classString.replace(className, '');
+            }
+
+            element.className.baseVal = classString;
+        }
     </script>
 
     <style>

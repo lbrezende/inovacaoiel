@@ -1056,3 +1056,8 @@ input[type=text]::-ms-clear {
 	margin: 0 0 10px 10px;
 	z-index: 99;
 }
+
+.half-width {
+	max-width: 50%;
+	display: inline-block;
+}
