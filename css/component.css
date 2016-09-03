@@ -304,11 +304,10 @@ button.fs-continue,
 }
 
 .fs-fields > li .fs-radio-custom span {
-	float: left;
+	display: inline-block;
 	position: relative;
-	margin-right: 1%;
 	padding: 10px;
-	max-width: 344px;
+	max-width: 323px;
 	min-height: 50px;
 	width: 33%;
 	text-align: center;
@@ -827,9 +826,10 @@ input[type=text]::-ms-clear {
 
 	.fs-fields > li .fs-radio-custom span {
 		width: 100%;
+		max-width: none;
 	}
 
-	.uf { width: 20% !important; }
+	.uf { width: 24% !important; }
 
 	.fs-form-wrap {
 		font-size: 70%;
