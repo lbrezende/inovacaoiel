@@ -1,0 +1,127 @@
+.light-background {
+  background: #60AAB6;
+}
+
+.sidebar {
+  background: #EFF7F8;
+  color: #11627F;
+  padding-top: 25px;
+  text-align: center;
+}
+
+.sidebar .sidebar-title {
+  font-weight: bold;
+  font-size: 10rem;
+  line-height: 10rem;
+}
+
+.sidebar .sidebar-subtitle {
+  text-transform: uppercase;
+  padding: 15px 25px 0 0;
+  border-top: 3px solid;
+}
+
+.sidebar .sidebar-description {
+  padding: 0 10%;
+  font-size: 1.3em;
+}
+
+.progress-label, .progress-icon {
+  display: inline-block;
+}
+
+.progress-label {
+  padding-right: 20px;
+  width: 60%;
+  text-align: right;
+  text-transform: uppercase;
+  vertical-align: baseline;
+}
+
+.progress-icon {
+  background: rgba(255, 255, 255, 0.5);
+  width: 100px;
+  height: 100px;
+  font-size: 3rem;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 100px;
+}
+
+.progress-icon.with-border {
+  border: 5px solid #48737F;
+  width: 95px;
+  height: 95px;
+  box-sizing: content-box;
+}
+
+.progress-bar-container {
+  background: rgba(100, 171, 182, 0.4);
+  border-radius: 25px;
+}
+
+.progress-bar {
+  background: #EEF6F7;
+  border-radius: 25px;
+  color: #11627F;
+  text-align: right;
+  padding: 20px 15px 25px 0;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.progress-bar.danger {
+  background: #DE9776;
+  color: #FFFFFF;
+}
+
+.progress-description {
+  color: #0A394A;
+  padding: 15px;
+  text-transform: uppercase;
+  text-align: justify;
+}
+
+#logo {
+  width: 75%;
+  height: 75%;
+}
+
+#title-label h1 {
+  font-size: 6rem;
+  letter-spacing: -5px;
+  margin: 0;
+}
+
+#title-label h2 {
+  font-size: 3.7rem;
+  letter-spacing: -2px;
+  margin: -20px 0 0;
+}
+
+#title-label h3 {
+  font-size: 2.45rem;
+  letter-spacing: -2px;
+  margin: 0;
+}
+
+#title-level {
+  font-size: 18rem;
+  line-height: 17rem;
+  border-bottom: 10px solid #EE9770;
+  margin-top: -40px;
+  color: #EE9770;
+}
+
+#graph {
+  margin-top: 50px;
+}
+
+#graph-description {
+  font-size: 1.4rem;
+  padding: 0 10%;
+}
+
+#progresses {
+  padding-top: 25px;
+}
