@@ -82,6 +82,96 @@
   text-align: justify;
 }
 
+.graph-container {
+  margin-bottom: 20px;
+}
+
+.graph-outer {
+  background: rgba(255, 255, 255, 0.5);
+  width: 110px;
+  height: 110px;
+  font-size: 3rem;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 100px;
+  display: inline-block;
+}
+
+.graph-inner {
+  width: 80px;
+  height: 80px;
+  font-size: 3rem;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 80px;
+  display: inline-block;
+  border: 3px solid #FFFFFF;
+  position: relative;
+  top: 15px;
+}
+
+.graph {
+  width: 90px;
+  height: 90px;
+  position: relative;
+  top: -8px;
+  left: -8px;
+}
+
+.graph-title {
+  text-transform: uppercase;
+  display: table;
+  min-height: 110px;
+}
+
+.graph-title span {
+  vertical-align: middle;
+  display: table-cell;
+}
+
+.graph-percentage {
+  min-height: 110px;
+  width: 100%;
+  display: table;
+}
+
+.graph-percentage-label {
+  display: table-cell;
+  vertical-align: middle;
+  position: relative;
+}
+
+.graph-percentage-label > span {
+  position: relative;
+  top: -5px;
+}
+
+.graph-percentage-label > span::after {
+  content: "";
+  border-radius: 50%;
+  border: 1px solid #FFFFFF;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.graph-percentage-line {
+  position: absolute;
+  height: 1px;
+  width: 90%;
+  top: 43px;
+  left: 20px;
+}
+
+.text-right .graph-percentage-line {
+  right: 19px;
+  left: inherit;
+}
+
 #logo {
   width: 75%;
   height: 75%;
@@ -123,5 +213,9 @@
 }
 
 #progresses {
+  padding-top: 25px;
+}
+
+#graphs {
   padding-top: 25px;
 }
