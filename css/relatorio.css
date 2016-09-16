@@ -219,3 +219,64 @@
 #graphs {
   padding-top: 25px;
 }
+
+#solutions {
+  padding-top: 300px;
+}
+
+#solutions-title {
+  text-transform: uppercase;
+}
+
+#solutions-title h1 {
+  font-size: 4.9rem;
+  margin: 0;
+}
+
+#solutions-title h2 {
+  font-size: 3.3rem;
+  text-align-last: justify;
+}
+
+#solutions-title h3 {
+  font-size: 3.5rem;
+  text-align-last: justify;
+}
+
+#solutions-title h3 em {
+  font-style: normal;
+  border-bottom: 5px solid #EE9770;
+  color: #EE9770;
+}
+
+#solutions-title p {
+  padding-top: 2em;
+  font-size: 1.3rem;
+}
+
+#solutions-graph {
+  margin-top: -12.5em;
+}
+
+#solutions-boxes {
+  margin-top: 100px;
+}
+
+.solution-box {
+  background: rgba(238, 151, 112, 0.5);
+  margin: 0 5px 40px;
+}
+
+.solution-box-title {
+  background: #EE9770;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 90%;
+  padding: 5px;
+  margin-bottom: 3px;
+}
+
+.solution-box-body  {
+  font-size: 85%;
+  padding: 30px 15px;
+}

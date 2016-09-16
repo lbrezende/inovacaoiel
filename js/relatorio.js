@@ -1,4 +1,9 @@
 (function() {
+
+  $(window).on('load', function () {
+    $(document).foundation();
+  });
+
   [].slice.call(document.querySelectorAll('[data-progress]')).forEach(function(container) {
 
     var progress = parseInt(container.getAttribute('data-progress')) / 100.0;
