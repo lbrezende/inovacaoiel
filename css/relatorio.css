@@ -282,7 +282,7 @@
 }
 
 #book-a-visit {
-  margin-top: 300px;
+  margin-top: 150px;
 }
 
 #book-a-visit h1 {
@@ -306,4 +306,8 @@
 #book-a-visit h3 {
   margin-bottom: 0;
   font-size: 1.8rem;
+}
+
+#footer {
+  margin-top: 200px;
 }
