@@ -286,12 +286,17 @@
   margin-top: -12.5em;
 }
 
+#solutions-graph img {
+  max-width: 700px;
+  margin-left:100px;
+}
+
 #solutions-boxes {
   margin-top: 100px;
 }
 
 #book-a-visit {
-  margin-top: 150px;
+  margin-top: 50px;
 }
 
 #book-a-visit h1 {
@@ -318,5 +323,5 @@
 }
 
 #footer {
-  margin-top: 200px;
+  /*margin-top: 200px;*/
 }
