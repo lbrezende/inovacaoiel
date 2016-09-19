@@ -1,5 +1,5 @@
 .light-background {
-  background: #60AAB6;
+  background: rgba(96, 170, 182, 0.64);
 }
 
 .sidebar {
@@ -11,18 +11,19 @@
 
 .sidebar .sidebar-title {
   font-weight: bold;
-  font-size: 10rem;
-  line-height: 10rem;
+  font-size: 7rem;
+  line-height: 5rem;
 }
 
 .sidebar .sidebar-subtitle {
   text-transform: uppercase;
-  padding: 15px 25px 0 0;
+  padding: 5px 10px 0 0;
   border-top: 3px solid;
+  font-size: 1.2rem;
 }
 
 .sidebar .sidebar-description {
-  padding: 0 10%;
+  padding: 1rem 0 0 1.2rem;
   font-size: 1.3em;
 }
 
@@ -76,7 +77,8 @@
 }
 
 .progress-description {
-  color: #0A394A;
+  /*color: #0A394A;*/
+  color: #FFF;
   padding: 15px;
   text-transform: uppercase;
   text-align: justify;
@@ -192,31 +194,35 @@
 }
 
 #logo {
-  width: 75%;
-  height: 75%;
+  padding-top:10px;
+  text-align: right;
+}
+
+.title{
+  margin-top:40px;
 }
 
 #title-label h1 {
-  font-size: 6rem;
+  font-size: 5rem;
   letter-spacing: -5px;
   margin: 0;
 }
 
 #title-label h2 {
-  font-size: 3.7rem;
+  font-size: 3.1rem;
   letter-spacing: -2px;
   margin: -20px 0 0;
 }
 
 #title-label h3 {
-  font-size: 2.45rem;
+  font-size: 2.05rem;
   letter-spacing: -2px;
   margin: 0;
 }
 
 #title-level {
-  font-size: 18rem;
-  line-height: 17rem;
+  font-size: 16rem;
+  line-height: 14rem;
   border-bottom: 10px solid #EE9770;
   margin-top: -40px;
   color: #EE9770;
@@ -227,8 +233,8 @@
 }
 
 #graph-description {
-  font-size: 1.4rem;
-  padding: 0 10%;
+  font-size: 1.2rem;
+  padding: 0 5%;
 }
 
 #progresses {
@@ -240,7 +246,7 @@
 }
 
 #solutions {
-  padding-top: 300px;
+  padding-top: 80px;
 }
 
 #solutions-title {
@@ -250,16 +256,19 @@
 #solutions-title h1 {
   font-size: 4.9rem;
   margin: 0;
+  line-height: 110%;
 }
 
 #solutions-title h2 {
   font-size: 3.3rem;
   text-align-last: justify;
+  line-height: 110%;
 }
 
 #solutions-title h3 {
   font-size: 3.5rem;
   text-align-last: justify;
+  line-height: 110%;
 }
 
 #solutions-title h3 em {
