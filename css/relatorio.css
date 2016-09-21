@@ -226,6 +226,7 @@
   border-bottom: 10px solid #EE9770;
   margin-top: -40px;
   color: #EE9770;
+  text-align: center;
 }
 
 #graph {
@@ -325,3 +326,67 @@
 #footer {
   /*margin-top: 200px;*/
 }
+
+
+/* Small screens */
+@media only screen { } /* Define mobile styles */
+
+@media  (max-width: 40em) {
+
+  #first-title {
+    margin-top: 20px;
+  }
+  #title-level {
+    font-size: 9rem;
+    line-height: 8rem;
+    margin-top: 0px;
+    text-align: center;
+  }
+  #logo {
+      height: 100px;
+    }
+
+  #title-label {
+    margin-top: 20px;
+  }
+
+  #title-label h1 {
+    font-size: 3em;
+    letter-spacing: -3px;
+    margin-bottom: 10px
+  }
+  #title-label h2 {
+    font-size: 1.9em;
+  }
+  #title-label h3 {
+    font-size: 1.3em;
+  }
+
+} /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+
+
+
+/* Medium screens*/
+@media only screen and (min-width: 40.063em) { } /* min-width 641px, medium screens */
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  #title-label{
+    text-align: right;
+    }
+  #title-label-right {
+    text-align: left;
+    }
+  } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+
+/* Large screens*/
+@media only screen and (min-width: 64.063em) { } /* min-width 1025px, large screens */
+
+@media only screen and (min-width: 64.063em) and (max-width: 90em) { } /* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
+
+/* XLarge screens*/
+@media only screen and (min-width: 90.063em) { } /* min-width 1441px, xlarge screens */
+
+@media only screen and (min-width: 90.063em) and (max-width: 120em) { } /* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
+
+/* XXLarge screens*/
+@media only screen and (min-width: 120.063em) { } /* min-width 1921px, xxlarge screens */
