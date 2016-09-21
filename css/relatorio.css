@@ -336,7 +336,7 @@
 /* Small screens */
 @media only screen { } /* Define mobile styles */
 
-@media  (max-width: 40em) {
+@media only screen  (max-width: 40em) {
 
   #first-title {
     margin-top: 20px;
