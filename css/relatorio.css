@@ -193,9 +193,14 @@
   padding: 30px 15px;
 }
 
-#logo {
+#logo-medium {
   padding-top:10px;
   text-align: right;
+}
+
+#logo-small-only {
+  padding-top:10px;
+  text-align: center;
 }
 
 .title{
@@ -343,7 +348,7 @@
     text-align: center;
   }
   #logo {
-      height: 100px;
+
     }
 
   #title-label {
