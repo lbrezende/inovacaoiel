@@ -41,18 +41,18 @@
 
 .progress-icon {
   background: rgba(255, 255, 255, 0.5);
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   font-size: 3rem;
   border-radius: 50%;
   text-align: center;
-  line-height: 100px;
+  line-height: 90px;
 }
 
 .progress-icon.with-border {
   border: 5px solid #48737F;
-  width: 95px;
-  height: 95px;
+  width: 80px;
+  height: 80px;
   box-sizing: content-box;
 }
 
