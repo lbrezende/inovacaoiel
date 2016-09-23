@@ -394,6 +394,41 @@
     /*text-align: center*/
   }
 
+#solutions-title h1 {
+  font-size: 2.6rem;
+  text-align: center;
+  margin: 0;
+  line-height: 110%;
+}
+
+#solutions-title h2 {
+  font-size: 2.6rem;
+  line-height: 110%;
+  text-align:center;
+  margin: 0px;
+}
+
+#solutions-title h3 {
+  font-size: 2.6rem;
+  text-align: center;
+  line-height: 110%;
+}
+
+#solutions-graph {
+  margin-top: 0px;
+  text-align: center;
+}
+
+#solutions-graph img {
+  max-width: 90%;
+  margin-left:0px;
+
+}
+
+#book-a-visit {
+  text-align: center
+}
+
 } /* max-width 640px, mobile-only styles, use when QAing mobile issues */
 
 
