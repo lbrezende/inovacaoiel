@@ -443,6 +443,43 @@
   #title-label-right {
     text-align: left;
     }
+.progress-label {
+    padding-bottom: 35px;
+    /* margin-top: -3px; */
+    line-height: 201%;
+
+    }
+
+  #solutions-title h1 {
+    font-size: 2.6rem;
+    text-align: center;
+    margin: 0;
+    line-height: 110%;
+  }
+
+  #solutions-title h2 {
+    font-size: 2.6rem;
+    line-height: 110%;
+    text-align:center;
+    margin: 0px;
+  }
+
+  #solutions-title h3 {
+    font-size: 2.6rem;
+    text-align: center;
+    line-height: 110%;
+  }
+  #solutions-graph {
+  margin-top: 0px;
+  text-align: center;
+}
+
+#solutions-graph img {
+  max-width: 90%;
+  margin-left:0px;
+
+}
+
   } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
 
 /* Large screens*/
