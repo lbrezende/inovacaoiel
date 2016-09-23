@@ -405,6 +405,7 @@
   font-size: 2.6rem;
   line-height: 110%;
   text-align:center;
+    text-align-last:center;
   margin: 0px;
 }
 
@@ -412,6 +413,7 @@
   font-size: 2.6rem;
   text-align: center;
   line-height: 110%;
+      text-align-last:center;
 }
 
 #solutions-graph {
@@ -474,12 +476,14 @@
     font-size: 2.6rem;
     line-height: 110%;
     text-align:center;
+    text-align-last:center;
     margin: 0px;
   }
 
   #solutions-title h3 {
     font-size: 2.6rem;
     text-align: center;
+    text-align-last:center;
     line-height: 110%;
   }
   #solutions-graph {
